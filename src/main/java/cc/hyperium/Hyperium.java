@@ -174,7 +174,6 @@ public class Hyperium {
         hyperiumCommandHandler.registerCommand(new CommandParty());
         hyperiumCommandHandler.registerCommand(new CommandResize());
         hyperiumCommandHandler.registerCommand(new CommandGarbageCollect());
-        hyperiumCommandHandler.registerCommand(new CommandMessage());
         hyperiumCommandHandler.registerCommand(new CommandDisableCommand());
         if(!Settings.FPS) {
             hyperiumCommandHandler.registerCommand(new CustomLevelheadCommand());
@@ -214,10 +213,6 @@ public class Hyperium {
 
     public MinigameListener getMinigameListener() {
         return minigameListener;
-    }
-
-    public boolean isDevEnv() {
-        return this.isDevEnv;
     }
 
     public Jailbreak getJailbreak() {
