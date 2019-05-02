@@ -23,8 +23,6 @@ import cc.hyperium.handlers.handlers.stats.fields.SmashHeroesStats;
 import cc.hyperium.handlers.handlers.stats.fields.TKRStats;
 import cc.hyperium.handlers.handlers.stats.fields.TNTGamesStats;
 import cc.hyperium.handlers.handlers.stats.fields.UHCStats;
-import cc.hyperium.handlers.handlers.stats.fields.WallsStats;
-import cc.hyperium.handlers.handlers.stats.fields.WarlordsStats;
 import cc.hyperium.mixinsimp.client.GlStateModifier;
 import cc.hyperium.mods.sk1ercommon.Multithreading;
 import cc.hyperium.mods.sk1ercommon.ResolutionUtil;
@@ -78,8 +76,6 @@ public class PlayerQuestsGui extends HyperiumGui {
         fields.add(new TKRStats());
         fields.add(new TNTGamesStats());
         fields.add(new UHCStats());
-        fields.add(new WallsStats());
-        fields.add(new WarlordsStats());
         for (AbstractHypixelStats field : fields) {
             Multithreading.runAsync(() -> {
                 if (!logos.containsKey(field))
